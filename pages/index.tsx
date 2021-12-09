@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next';
+import Link from 'next/link';
 
 // export const getStaticProps: GetStaticProps = async (context) => {
 //   // ...
@@ -19,10 +20,12 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
       </Head>
-
+      <Link href="/hello">
+        <a>hello</a>
+      </Link>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          fff<a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
